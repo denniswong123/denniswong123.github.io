@@ -1,0 +1,32 @@
+<html>
+  <head>
+  </head>
+  <body>
+  <div id="finalOrder">
+    <h1 id="title">Your Order:</h1>
+    <p id="itemone"></p>
+    <p id="itemtwo"></p>
+    <p id="itemthree"></p>
+    <p id="itemfour"></p>
+    <p id="itemfive"></p>
+    <p id="itemsix"></p>
+    <p id="totalPrice"></p>
+  </div>
+  <script>
+    var itemone = sessionStorage.getItem('item1');
+    var itemtwo = sessionStorage.getItem('item2');
+    var itemthree = sessionStorage.getItem('item3');
+    var itemfour = sessionStorage.getItem('item4');
+    var itemfive = sessionStorage.getItem('item5');
+    var itemsix = sessionStorage.getItem('item6');
+    var totalPrice = sessionStorage.getItem('totalPrice');
+    document.getElementById('itemone').innerHTML = itemone;
+    document.getElementById('itemtwo').innerHTML = itemtwo;
+    document.getElementById('itemthree').innerHTML = itemthree;
+    document.getElementById('itemfour').innerHTML = itemfour;
+    document.getElementById('itemfive').innerHTML = itemfive;
+    document.getElementById('itemsix').innerHTML = itemsix;
+    document.getElementById('totalPrice').innerHTML = "Total Price: $" + totalPrice;
+  </script>
+  </body>
+</html>
